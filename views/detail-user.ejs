@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/detail-user.css">
+	<title><%= title %></title>
+</head>
+<body>
+<div class="container">
+	<div class="avatar" style="background-color: <%= theme[1] %>;"><%= theme[0] %></div>
+	<div class="detail-user">
+		<div class="box">
+			<h2 class="field">Nama : <span class="value"><%= user.nama %></span></h2>
+		</div>
+		<div class="box">
+			<h2 class="field">Tempat Lahir : <span class="value"><%= user["tempat-lahir"] %></span></h2>
+		</div>
+		<div class="box">
+			<h2 class="field">Tanggal Lahir : <span class="value"><%= user["tanggal-lahir"] %></span></h2>
+		</div>
+		<div class="box">
+			<h2 class="field">Alamat : <span class="value"><%= user.alamat %></span></h2>
+		</div>
+		<a href="/" class="back-btn">kembali</a>
+	</div>
+</div>
+</body>
+</html>

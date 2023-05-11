@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/add-user.css">
+	<title><%= title %></title>
+</head>
+<body>
+<div>
+<h1>Tambah Data Baru</h1><br/><br/>
+  <form method="post" action="/add-user">
+    <label for="nama">Nama :</label>
+    <input required type="text" id="nama" name="nama" placeholder="nama kamu..">
+
+    <label for="tempat-lahir">Tempat Lahir :</label>
+    <input required type="text" id="tempat-lahir" name="tempat-lahir" placeholder="tempat lahir..">
+
+    <labeltanggal">Tanggal Lahir :</label>
+    <input required type="text" id="tanggal-lahir" name="tanggal-lahir" placeholder="tanggal lahir..">
+
+    <label for="alamat">Alamat :</label>
+    <input required type="text" id="alamat" name="alamat" placeholder="alamat kamu..">
+  
+    <input required type="submit" value="Tambah data">
+  </form>
+</div>
+</body>
+</html>
